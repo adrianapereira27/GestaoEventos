@@ -7,10 +7,10 @@
 
         private Dictionary<Participante, int> avaliacoes;
 
-        public Atividade(string nome, DateTime horario)
+        public Atividade(string nome, Evento evento)
         {
             Nome = nome;
-            Horario = horario;
+            Horario = evento.DataHora;
             avaliacoes = new Dictionary<Participante, int>();
         }
 

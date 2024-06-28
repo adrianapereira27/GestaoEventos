@@ -5,7 +5,7 @@ namespace GestaoEventos.Entidades;
 public abstract class Evento
 {
     public string Nome { get; set; }
-    public DateTime Data { get; set; }
+    public DateTime DataHora { get; set; }
     public string Local { get; set; }
     public int CapacidadeMaxima { get; set; }
     public Status Status { get; set; }
@@ -14,10 +14,10 @@ public abstract class Evento
 
     private List<Atividade> atividades;
 
-    public Evento(string nome, DateTime data, string local, int capacidadeMaxima)
+    public Evento(string nome, DateTime dataHora, string local, int capacidadeMaxima)
     {
         Nome = nome;
-        Data = data;
+        DataHora = dataHora;
         Local = local;
         CapacidadeMaxima = capacidadeMaxima;
         participantes = new List<Participante>();

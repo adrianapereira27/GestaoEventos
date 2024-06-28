@@ -4,7 +4,7 @@ namespace GestaoEventos.Entidades;
 
 public class Conferencia : Evento
 {
-    public string TituloPrincipal { get; set; }
+    public string TituloPrincipal { get; set; }    
 
     public Conferencia(string nome, DateTime data, string local, int capacidadeMaxima, string tituloPrincipal)
         : base(nome, data, local, capacidadeMaxima)

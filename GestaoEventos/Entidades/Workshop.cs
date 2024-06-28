@@ -6,8 +6,7 @@ public class Workshop : Evento
 {    
     public Palestrante Palestrante { get; set; }
     public string Tema { get; set; }
-
-
+   
     public Workshop(string nome, DateTime data, string local, int capacidadeMaxima, string tema)
         : base(nome, data, local, capacidadeMaxima)
     {
