@@ -2,6 +2,7 @@
 {
     public enum Status
     {
+        Cadastrado,
         Iniciado,
         Pausado,
         Concluido,

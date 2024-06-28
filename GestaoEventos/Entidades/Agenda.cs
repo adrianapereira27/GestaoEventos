@@ -25,7 +25,7 @@ public class Agenda
 
     public void MostrarAgenda()
     {
-        Console.WriteLine($"Agenda de {Participante.Nome}:");
+        Console.WriteLine($"Agenda do {Participante.TipoParticipante} {Participante.Nome}:");
         foreach (var evento in eventos)
         {
             evento.Iniciar(); // Polimorfismo

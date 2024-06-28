@@ -1,4 +1,6 @@
-﻿namespace GestaoEventos.Entidades;
+﻿using GestaoEventos.Enumeradores;
+
+namespace GestaoEventos.Entidades;
 
 public class Palestrante : Participante
 {
@@ -9,6 +11,7 @@ public class Palestrante : Participante
         : base(nome, email)
     {
         Biografia = biografia;
+        TipoParticipante = TipoParticipante.Palestrante;
     }
 
     public override void ExibirInformacoes()

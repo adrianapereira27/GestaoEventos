@@ -7,8 +7,8 @@ class Program
     {
         // Criando Participantes
         Palestrante palestrante1 = new Palestrante("Dr. João Silva", "joao.silva@example.com", "Especialista em Inteligência Artificial");
-        Expectador expectador1 = new Expectador("Ana Santos", "ana.santos@example.com", true);
-        Expectador expectador2 = new Expectador("Carlos Souza", "carlos.souza@example.com", false);
+        Espectador expectador1 = new Espectador("Ana Santos", "ana.santos@example.com", true);
+        Espectador expectador2 = new Espectador("Carlos Souza", "carlos.souza@example.com", false);
 
         // Criando Eventos
         Workshop workshop = new Workshop("Machine Learning", new DateTime(2024, 07, 01), "Auditório 1", 30, "Introdução ao Machine Learning");
@@ -64,7 +64,7 @@ class Program
         Console.WriteLine();
         atividade3.ExibirInformacoes();
 
-
+        
         Console.ReadLine();
     }
 }

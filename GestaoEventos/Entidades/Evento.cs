@@ -22,6 +22,7 @@ public abstract class Evento
         CapacidadeMaxima = capacidadeMaxima;
         participantes = new List<Participante>();
         atividades = new List<Atividade>();
+        Status = Status.Cadastrado;
     }
 
     public void AdicionarParticipante(Participante participante)

@@ -1,4 +1,6 @@
-﻿namespace GestaoEventos.Entidades;
+﻿using GestaoEventos.Enumeradores;
+
+namespace GestaoEventos.Entidades;
 
 public class Workshop : Evento
 {    
@@ -10,25 +12,30 @@ public class Workshop : Evento
         : base(nome, data, local, capacidadeMaxima)
     {
         Tema = tema;
+        Status = Status.Cadastrado;
     }
 
     public override void Iniciar()
     {
         Console.WriteLine($"Workshop de {Nome} iniciado.");
+        Status = Status.Iniciado;
     }
 
     public override void Pausar()
     {
         Console.WriteLine($"Workshop de {Nome} pausado.");
+        Status = Status.Pausado;
     }
 
     public override void Concluir()
     {
         Console.WriteLine($"Workshop de {Nome} concluído.");
+        Status = Status.Concluido;
     }
 
     public override void Cancelar()
     {
         Console.WriteLine($"Workshop de {Nome} cancelado.");
+        Status = Status.Cancelado;
     }
 }

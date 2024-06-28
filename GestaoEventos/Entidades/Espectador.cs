@@ -1,13 +1,16 @@
-﻿namespace GestaoEventos.Entidades;
+﻿using GestaoEventos.Enumeradores;
 
-public class Expectador : Participante
+namespace GestaoEventos.Entidades;
+
+public class Espectador : Participante
 {
     public bool VIP { get; set; }
 
-    public Expectador(string nome, string email, bool vip)
+    public Espectador(string nome, string email, bool vip)
         : base(nome, email)
     {
         VIP = vip;
+        TipoParticipante = TipoParticipante.Espectador;
     }
 
     public override void ExibirInformacoes()
